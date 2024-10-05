@@ -10,7 +10,11 @@ import geodatasets
 import matplotlib.pyplot as plt
 import descartes
 
-df = pd.read_csv("C:/Users/ADITHI/Desktop/nasa/gws/NASA_Hackathon_2024_Meteoric_Minds/India_gws_01012023_05092024.csv")
+# Define the relative path to the CSV file
+file_path = '../India_gws_01012023_05092024.csv'
+df=pd.read_csv(file_path)
+
+#df = pd.read_csv("C:/Users/ADITHI/Desktop/nasa/gws/NASA_Hackathon_2024_Meteoric_Minds/India_gws_01012023_05092024.csv")
 
 df.shape 
 # 677618, 8

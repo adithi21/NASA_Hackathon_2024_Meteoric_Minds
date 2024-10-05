@@ -10,12 +10,12 @@ import geodatasets
 import matplotlib.pyplot as plt
 
 
-df = pd.read_csv("C:/Users/ADITHI/Desktop/nasa/gws/NASA_Hackathon_2024_Meteoric_Minds/data_with_state.csv")
+df = pd.read_csv('../data_with_state.csv')
 # Set the coordinate reference system (CRS)
 geo_df.crs = 'EPSG:4326'  # WGS84
 
 world = gpd.read_file(geodatasets.data.naturalearth.land['url'])
-country_map = gpd.read_file('C:/Users/ADITHI/Desktop/nasa/gws/NASA_Hackathon_2024_Meteoric_Minds/EDA/india_ds.shp')
+country_map = gpd.read_file('india_ds.shp')
 # Create geometry from latitude and longitude
 # week1
 
